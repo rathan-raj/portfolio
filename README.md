@@ -8,11 +8,11 @@
 
 ## Work Experience
 **Java Full Stack Developer @ Carelon Global Solutions (_July 2022 - March 2024_)**
--1.9 years’ experience working as a Java Full stack developer in developing core Java applications and adding functionalities to existing JPA and web service applications.
--Improved code efficiency by optimizing the code with solid expertise in popular frameworks like Spring Boot Hibernate and Quarkus.
--Incorporated the APIGEE Proxy layer to enhance API security and management.
--Maintained 90% code coverage by writing balanced test cases using Junit and Mockito.
--Working experience in the design and development of UI using Angular 9.
+- 1.9 years experience working as a Java Full stack developer in developing core Java applications and adding functionalities to existing JPA and web service applications.
+- Improved code efficiency by optimizing the code with solid expertise in popular frameworks like Spring Boot Hibernate and Quarkus.
+- Incorporated the APIGEE Proxy layer to enhance API security and management.
+- Maintained 90% code coverage by writing balanced test cases using Junit and Mockito.
+- Working experience in the design and development of UI using Angular 9.
 
 ## Projects
 ### Classification of Traffic Collision
