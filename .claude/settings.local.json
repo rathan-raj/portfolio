@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api:*)",
+      "Bash(brew install:*)",
+      "Bash(/opt/homebrew/bin/gh api:*)",
+      "Bash(/opt/homebrew/bin/gh auth:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}

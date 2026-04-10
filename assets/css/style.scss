@@ -1,0 +1,261 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* ── Base ─────────────────────────────────────────────── */
+:root {
+  --bg:          #0d1117;
+  --sidebar-bg:  #161b22;
+  --card-bg:     #21262d;
+  --accent:      #58a6ff;
+  --accent-dim:  #1f6feb;
+  --text:        #c9d1d9;
+  --text-muted:  #8b949e;
+  --heading:     #e6edf3;
+  --border:      #30363d;
+  --green:       #3fb950;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.7;
+}
+
+/* ── Sidebar ──────────────────────────────────────────── */
+#sidebar {
+  background: linear-gradient(160deg, var(--sidebar-bg) 0%, #0d1117 100%);
+  border-right: 1px solid var(--border);
+  padding: 28px 24px;
+
+  h1 {
+    color: var(--heading);
+    font-size: 1.25em;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-bottom: 12px;
+    line-height: 1.3;
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+
+      &:hover {
+        color: #a5d6ff;
+      }
+    }
+  }
+
+  p {
+    color: var(--text-muted);
+    font-size: 0.88em;
+  }
+
+  img {
+    border: 2px solid var(--accent-dim);
+    border-radius: 50%;
+    transition: border-color 0.2s ease;
+
+    &:hover {
+      border-color: var(--accent);
+    }
+  }
+
+  /* Sidebar nav links (download buttons) */
+  a.button {
+    background-color: var(--accent-dim);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 0.82em;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+    display: inline-block;
+    margin-top: 6px;
+
+    &:hover {
+      background-color: var(--accent);
+      transform: translateY(-1px);
+      color: #0d1117;
+    }
+  }
+}
+
+/* ── Main content ─────────────────────────────────────── */
+section {
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 32px 40px 48px;
+  max-width: 860px;
+}
+
+/* ── Headings ─────────────────────────────────────────── */
+h1, h2, h3, h4 {
+  color: var(--heading);
+}
+
+h2 {
+  font-size: 1.35em;
+  font-weight: 700;
+  border-bottom: 2px solid var(--accent-dim);
+  padding-bottom: 8px;
+  margin-top: 2.4em;
+  margin-bottom: 1em;
+  color: var(--accent);
+}
+
+h3 {
+  font-size: 1.08em;
+  font-weight: 600;
+  margin-top: 1.8em;
+  margin-bottom: 0.4em;
+  padding-left: 14px;
+  border-left: 3px solid var(--accent);
+  color: var(--heading);
+
+  a {
+    color: var(--heading);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+h4 {
+  font-size: 0.95em;
+  color: var(--text-muted);
+  margin-top: 0.6em;
+}
+
+/* ── Paragraphs & intro block ─────────────────────────── */
+p {
+  color: var(--text);
+  margin-bottom: 0.8em;
+  font-size: 0.95em;
+}
+
+/* Intro line with GitHub/LinkedIn links */
+p:first-of-type {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 0.9em;
+  color: var(--text-muted);
+}
+
+/* ── Links ────────────────────────────────────────────── */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: #a5d6ff;
+    text-decoration: underline;
+  }
+}
+
+/* ── Horizontal rules ─────────────────────────────────── */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.8em 0;
+}
+
+/* ── Lists ────────────────────────────────────────────── */
+ul, ol {
+  padding-left: 1.5em;
+  margin-bottom: 0.8em;
+
+  li {
+    color: var(--text);
+    margin-bottom: 4px;
+    font-size: 0.94em;
+
+    &::marker {
+      color: var(--accent-dim);
+    }
+  }
+}
+
+/* ── Inline code ──────────────────────────────────────── */
+code {
+  background: var(--card-bg);
+  color: #79c0ff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 0.88em;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+/* ── Strong / emphasis ────────────────────────────────── */
+strong {
+  color: var(--heading);
+  font-weight: 600;
+}
+
+em {
+  color: var(--text-muted);
+}
+
+/* ── Project card sections ────────────────────────────── */
+/* Each project is wrapped between two <hr> elements;
+   target the content between them by styling the flow */
+h3 + ul,
+h3 + p + ul {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 18px 14px 32px;
+  margin-top: 6px;
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-color: var(--accent-dim);
+  }
+}
+
+/* ── Shields.io badge images ──────────────────────────── */
+img[src*="shields.io"] {
+  vertical-align: middle;
+  margin-left: 6px;
+  border-radius: 4px;
+}
+
+/* ── Scrollbar (webkit) ───────────────────────────────── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+
+  &:hover {
+    background: var(--text-muted);
+  }
+}
+
+/* ── Responsive tweaks ────────────────────────────────── */
+@media (max-width: 960px) {
+  section {
+    padding: 24px 20px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+}
