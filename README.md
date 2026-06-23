@@ -1,6 +1,6 @@
 # Rathan Raj Dasari
 
-**Software Developer | AI/ML Engineer**
+**Software Developer** | **AI/ML Engineer**
 
 Software Developer with ~2 years of experience architecting distributed systems and cloud-native platforms. Proven track record engineering high-throughput, low-latency systems handling 5,000+ requests/second. Passionate about applying machine learning to real-world problems — from fraud detection algorithms to cloud-native applications.
 
